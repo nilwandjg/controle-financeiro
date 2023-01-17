@@ -2,11 +2,11 @@ import React from 'react'
 import * as C from "./styles"
 
 const Header = () => {
-  return ( 
+  return (
     <C.Container>
-        <C.Header>
-            <C.Title>Controle Financeiro</C.Title>
-        </C.Header>
+      <C.Header>
+        <C.Title>Controle Financeiro</C.Title>
+      </C.Header>
     </C.Container>
 
   )

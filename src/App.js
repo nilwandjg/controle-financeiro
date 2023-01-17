@@ -30,7 +30,7 @@ const App = () => {
 
         setIncome(`R$ ${income}`);
         setExpense(`R$ ${expense}`);
-        setTotal(`${Number(income) < Number(expense) ? "-" : ""}R$ ${total}`);
+        setTotal(`${Number(income) < Number(expense) ? "- " : ""}R$ ${total}`);
 
     }, [transactionsList]);
 
@@ -46,7 +46,7 @@ const App = () => {
         <>
             <Header />
             <Resume income={income} expense={expense} total={total} />
-            <Form handleAdd={handleAdd} />
+            <Form handleAdd={handleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList} />
             <GlobalStyle />
         </>
     )
